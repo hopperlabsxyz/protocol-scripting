@@ -51,26 +51,21 @@ async function main(){
   }
   ));
 
-  // console.log(result);
-//   const res = "// This file is auto-generated. Do not edit!\n\nexport default ".concat(JSON.stringify(result, null, 4)).concat(" as const");
-// // fileName = "out/_" + shortName + "Info.ts";
-//   const fileName = "out/_" + "arb1" + "Info.ts";
-//   fs.writeFileSync( fileName, res);
+  // Convert the result to a JSON string with indentation
+  const jsonString = JSON.stringify(result, null, 4);
 
-  // Step 1: Convert the result to a JSON string with indentation
-  let jsonString = JSON.stringify(result, null, 4);
+  // Remove quotes around keys using a regex
+  const formatedString = jsonString.replace(/"([^"]+)":/g, '$1:');
 
-  // Step 2: Remove quotes around keys using a regex
-  jsonString = jsonString.replace(/"([^"]+)":/g, '$1:');
+  // Add the prefix and suffix
+  const res = `// This file is auto-generated. Do not edit!\n\nexport default ${formatedString} as const`;
 
-  // Step 3: Add the prefix and suffix
-  const res = `// This file is auto-generated. Do not edit!\n\nexport default ${jsonString} as const`;
+  const protocolName = "arb1"; //define the protocol name
 
-  const protocolName = "arb1";
   // Specify the file name
   const fileName = "out/_" + protocolName + "Info.ts";
 
-  // Step 4: Write to the file
+  // Write to the file
   fs.writeFileSync(fileName, res);
 }
 
