@@ -52,10 +52,26 @@ async function main(){
   ));
 
   // console.log(result);
-  const res = "// This file is auto-generated. Do not edit!\n\nexport default ".concat(JSON.stringify(result, null, 4)).concat(" as const;");
+//   const res = "// This file is auto-generated. Do not edit!\n\nexport default ".concat(JSON.stringify(result, null, 4)).concat(" as const");
+// // fileName = "out/_" + shortName + "Info.ts";
+//   const fileName = "out/_" + "arb1" + "Info.ts";
+//   fs.writeFileSync( fileName, res);
 
-  fs.writeFileSync('out/_arb1Info.ts', res);  
+  // Step 1: Convert the result to a JSON string with indentation
+  let jsonString = JSON.stringify(result, null, 4);
 
+  // Step 2: Remove quotes around keys using a regex
+  jsonString = jsonString.replace(/"([^"]+)":/g, '$1:');
+
+  // Step 3: Add the prefix and suffix
+  const res = `// This file is auto-generated. Do not edit!\n\nexport default ${jsonString} as const`;
+
+  const protocolName = "arb1";
+  // Specify the file name
+  const fileName = "out/_" + protocolName + "Info.ts";
+
+  // Step 4: Write to the file
+  fs.writeFileSync(fileName, res);
 }
 
 main().then(() => process.exit(0)).catch(error => {
