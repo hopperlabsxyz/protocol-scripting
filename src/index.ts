@@ -1,5 +1,6 @@
 import { createPublicClient, getContract, http } from 'viem';
 import { arbitrum } from 'viem/chains';
+import fs from 'fs';
 
 export const publicClient = createPublicClient({
     chain: arbitrum,
@@ -50,7 +51,10 @@ async function main(){
   }
   ));
 
-  console.log(result);
+  // console.log(result);
+  const res = "// This file is auto-generated. Do not edit!\n\nexport default ".concat(JSON.stringify(result, null, 4)).concat(" as const;");
+
+  fs.writeFileSync('out/_arb1Info.ts', res);  
 
 }
 
