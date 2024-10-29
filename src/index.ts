@@ -15,15 +15,23 @@ const ABIs = [{"inputs":[{"internalType":"contract IPoolAddressesProvider","name
 
 
 
+async function main(){
 
-// 1. Create contract instance
+  // 1. Create contract instance
 
-const contract = getContract({
-    address: PROTOCOL_DATA_PROVIDER,
-    abi: ABIs,
-    client: publicClient,
-  })
+  const contract = getContract({
+      address: PROTOCOL_DATA_PROVIDER,
+      abi: ABIs,
+      client: publicClient,
+    })
 
-  // 2. call getAllReservesTokens 
-const result = await contract.read.getAllReservesTokens();
-console.log(result);
+    // 2. call getAllReservesTokens 
+  const ReservesTokens = await contract.read.getAllReservesTokens();
+  console.log(ReservesTokens);
+
+}
+
+main().then(() => process.exit(0)).catch(error => {
+  console.error(error);
+  process.exit(1);
+});
