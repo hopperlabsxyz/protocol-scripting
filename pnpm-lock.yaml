@@ -8,12 +8,16 @@ importers:
 
   .:
     dependencies:
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.8.2)(typescript@5.6.3)
       viem:
         specifier: ^2.21.36
         version: 2.21.36(typescript@5.6.3)
+    devDependencies:
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.8.2)(typescript@5.6.3)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
 
 packages:
 
