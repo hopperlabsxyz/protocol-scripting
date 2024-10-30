@@ -34,7 +34,7 @@ async function main(){
   
     const reserveData = {
       symbol: reserveToken.symbol,
-      tokenAddress: reserveToken.tokenAddress,
+      token: reserveToken.tokenAddress,
 
       usageAsCollateralEnabled: configDataRaw[5],
       borrowingEnabled: configDataRaw[6],
