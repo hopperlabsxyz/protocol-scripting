@@ -3,7 +3,7 @@
 This project contains scripts and tools for interacting with blockchain protocols.
 ## Objective
 
-The main objective of this repository is to automatically generate a custom version of the `{protocol}Info.ts` file required for the Defi-kit repository managed by karpatkey. This is necessary because some private repositories are included in their requirements.
+The main objective of this repository is to automatically generate a custom version of the `_{protocol}Info.ts` file required for the Defi-kit repository managed by karpatkey. This is necessary because some private repositories are included in their requirements.
 
 ## Getting Started
 
