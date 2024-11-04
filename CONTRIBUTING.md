@@ -2,6 +2,7 @@
 
 We welcome contributions to improve and expand the functionality of this project. Please follow these guidelines to contribute effectively and ensure a smooth collaboration.
 
+
 ## Getting Started
 
 1. **Fork the Repository**:
@@ -18,19 +19,21 @@ We welcome contributions to improve and expand the functionality of this project
    Before making any changes, create a new branch for each specific feature, bug fix, or improvement.
    ```bash
       git checkout -b feature/your-feature-name
+   ```
 
-
+   
 ## Development Guidelines
 To maintain code quality and consistency, please adhere to the following development guidelines:
 
-### Coding Standards: 
+* ### *Coding Standards*: 
    Follow the project's existing code style. Ensure your code is clean, well-documented, and follows the general formatting and style conventions used in this repository.
 
-### Testing:
+* ### *Testing*:
    Run tests to make sure your changes don’t introduce any errors or break existing functionality. If you add new features, consider adding tests to verify the new functionality
 
-### Documentation:
+* ### *Documentation*:
    Update documentation as needed to reflect your changes, especially if you’re introducing new features or modifying existing functionality.
+
 
 
 
