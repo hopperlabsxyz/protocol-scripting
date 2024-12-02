@@ -1,9 +1,14 @@
 import { createPublicClient, http } from "viem";
-import { arbitrum } from "viem/chains";
+import { arbitrum, mainnet } from "viem/chains";
 import fs from "fs";
 
 export const arb1Client = createPublicClient({
   chain: arbitrum,
+  transport: http(),
+});
+
+export const mainnetClient = createPublicClient({
+  chain: mainnet,
   transport: http(),
 });
 
