@@ -3,11 +3,13 @@ import { arbitrum, mainnet } from "viem/chains";
 import fs from "fs";
 
 export const arb1Client = createPublicClient({
+  batch: { multicall: true },
   chain: arbitrum,
   transport: http(),
 });
 
 export const mainnetClient = createPublicClient({
+  batch: { multicall: true },
   chain: mainnet,
   transport: http(),
 });
