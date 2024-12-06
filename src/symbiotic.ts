@@ -16,7 +16,7 @@ async function getDefaultCollateralInfo(
     args: [index],
   })) as `0x${string}`;
 
-  const name = publicClient.readContract({
+  const name = await publicClient.readContract({
     address: defaultCollateralAddr,
     abi: defaultCollateralAbi,
     functionName: "symbol",

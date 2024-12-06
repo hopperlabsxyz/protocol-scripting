@@ -2,7 +2,7 @@
 
 export default [
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0xC329400492c6ff2438472D4651Ad17389fCb843a",
         token: {
             symbol: "wstETH",
@@ -10,7 +10,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0x33D3B87C957D5CD89b0fb980a29718DCF043B66e",
         token: {
             symbol: "wstETH",
@@ -18,7 +18,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_cbETH",
         address: "0xB26ff591F44b04E78de18f43B46f8b70C6676984",
         token: {
             symbol: "cbETH",
@@ -26,7 +26,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wBETH",
         address: "0x422F5acCC812C396600010f224b320a743695f85",
         token: {
             symbol: "wBETH",
@@ -34,7 +34,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_rETH",
         address: "0x03Bf48b8A1B37FBeAd1EcAbcF15B98B924ffA5AC",
         token: {
             symbol: "rETH",
@@ -42,7 +42,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_mETH",
         address: "0x475D3Eb031d250070B63Fa145F0fCFC5D97c304a",
         token: {
             symbol: "mETH",
@@ -50,7 +50,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_swETH",
         address: "0x38B86004842D3FA4596f0b7A0b53DE90745Ab654",
         token: {
             symbol: "swETH",
@@ -58,7 +58,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_sfrxETH",
         address: "0x5198CB44D7B2E993ebDDa9cAd3b9a0eAa32769D2",
         token: {
             symbol: "sfrxETH",
@@ -66,7 +66,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_ETHx",
         address: "0xBdea8e677F9f7C294A4556005c640Ee505bE6925",
         token: {
             symbol: "ETHx",
@@ -74,7 +74,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0xd0153899E51c5A0Fcc98246ba428cC97BD6F50d3",
         token: {
             symbol: "wstETH",
@@ -82,7 +82,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0x948323Aa8E5c1743F3d94B26EAd4d27AE953c654",
         token: {
             symbol: "wstETH",
@@ -90,7 +90,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0x11655f71A58d17aD216f30A491BaEF3b48f00Fc7",
         token: {
             symbol: "wstETH",
@@ -98,7 +98,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_wstETH",
         address: "0xceafa7757b8b302dCb0174D48Cf6EaBB28963B48",
         token: {
             symbol: "wstETH",
@@ -106,7 +106,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_uniETH",
         address: "0x1C57ea879dd3e8C9fefa8224fdD1fa20dd54211E",
         token: {
             symbol: "uniETH",
@@ -114,7 +114,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_PEPE",
         address: "0x95C17e3D3950a3ef5bc128ddFBC60f885cEfb0Dc",
         token: {
             symbol: "PEPE",
@@ -122,7 +122,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_SHIB",
         address: "0x4999D54320af7B1F88B2829363c0F32aC7bB9928",
         token: {
             symbol: "SHIB",
@@ -130,7 +130,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_ENA",
         address: "0xe39B5f5638a209c1A6b6cDFfE5d37F7Ac99fCC84",
         token: {
             symbol: "ENA",
@@ -138,7 +138,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_sUSDe",
         address: "0x19d0D8e6294B7a04a2733FE433444704B791939A",
         token: {
             symbol: "sUSDe",
@@ -146,7 +146,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_WBTC",
         address: "0x971e5b5D4baa5607863f3748FeBf287C7bf82618",
         token: {
             symbol: "WBTC",
@@ -154,7 +154,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_tBTC",
         address: "0x0C969ceC0729487d264716e55F232B404299032c",
         token: {
             symbol: "tBTC",
@@ -162,7 +162,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_LsETH",
         address: "0xB09A50AcFFF7D12B7d18adeF3D1027bC149Bad1c",
         token: {
             symbol: "LsETH",
@@ -170,7 +170,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_osETH",
         address: "0x52cB8A621610Cc3cCf498A1981A8ae7AD6B8AB2a",
         token: {
             symbol: "osETH",
@@ -178,7 +178,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_ETHFI",
         address: "0x21DbBA985eEA6ba7F27534a72CCB292eBA1D2c7c",
         token: {
             symbol: "ETHFI",
@@ -186,7 +186,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_FXS",
         address: "0x940750A267c64f3BBcE31B948b67CD168f0843fA",
         token: {
             symbol: "FXS",
@@ -194,7 +194,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_LBTC",
         address: "0x9C0823D3A1172F9DdF672d438dec79c39a64f448",
         token: {
             symbol: "LBTC",
@@ -202,7 +202,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_hETH",
         address: "0x852463974AEe1d6155ce3e3d936e76A101A4aF19",
         token: {
             symbol: "hETH",
@@ -210,7 +210,7 @@ export default [
         }
     },
     {
-        name: {},
+        name: "DC_SWELL",
         address: "0x544f45485418341C1a2B3a44404F12302277fFFC",
         token: {
             symbol: "SWELL",
