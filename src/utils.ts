@@ -14,7 +14,11 @@ export const mainnetClient = createPublicClient({
   transport: http(),
 });
 
-export function dumpOjectToFile(o: Object, fileName: string) {
+export function dumpOjectToFile(
+  o: Object,
+  directoryPath: string,
+  fileName: string,
+) {
   // Convert the result to a JSON string with indentation
   const jsonString = JSON.stringify(o, null, 4);
 
@@ -24,6 +28,12 @@ export function dumpOjectToFile(o: Object, fileName: string) {
   // Add the prefix and suffix
   const res = `// This file is auto-generated. Do not edit!\n\nexport default ${formatedString} as const`;
 
+  directoryPath = `out/${directoryPath}`;
+
+  // Create directory if it does not exist
+  if (!fs.existsSync(directoryPath)) {
+    fs.mkdirSync(directoryPath);
+  }
   // Write to the file
-  fs.writeFileSync("out/_" + fileName + "Info.ts", res);
+  fs.writeFileSync(`${directoryPath}/${fileName}Info.ts`, res);
 }
