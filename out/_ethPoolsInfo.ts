@@ -216,5 +216,13 @@ export default [
             symbol: "SWELL",
             address: "0x0a6E7Ba5042B38349e437ec6Db6214AEC7B35676"
         }
+    },
+    {
+        name: "DC_MANTA",
+        address: "0x594380c06552A4136E2601F89E50b3b9Ad17bd4d",
+        token: {
+            symbol: "MANTA",
+            address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5"
+        }
     }
 ] as const
