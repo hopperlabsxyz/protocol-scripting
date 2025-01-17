@@ -8,13 +8,24 @@ import defaultCollateralAbi from "./abis/DefaultCollateral";
 async function getDefaultCollateralInfo(
   publicClient: ReturnType<typeof createPublicClient>,
   index: number,
+  lastVersion: bigint
 ) {
   const defaultCollateralAddr = (await publicClient.readContract({
     address: PROTOCOL_DATA_PROVIDER,
     abi: factoryAbi,
     functionName: "entity",
-    args: [index],
+    args: [BigInt(index)],
   })) as `0x${string}`;
+
+  const version = await publicClient.readContract({
+    address: defaultCollateralAddr,
+    abi: defaultCollateralAbi,
+    functionName: "version",
+  });
+
+  if (version !== lastVersion) {
+    return null;
+  }
 
   const name = await publicClient.readContract({
     address: defaultCollateralAddr,
@@ -37,26 +48,31 @@ async function getDefaultCollateralInfo(
   return {
     name,
     address: defaultCollateralAddr,
-    token: {
-      symbol: assetSymbol,
-      address: assetAddr,
-    },
+    tokenSymbol: assetSymbol,
+    tokenAddress: assetAddr,
   };
 }
 
 export default {
   getProtocolData: async (
-    publicClient: ReturnType<typeof createPublicClient>,
+    publicClient: ReturnType<typeof createPublicClient>
   ) => {
-    const totalEntities = (await publicClient.readContract({
+    const totalEntities = await publicClient.readContract({
       address: PROTOCOL_DATA_PROVIDER,
       abi: factoryAbi,
       functionName: "totalEntities",
-    })) as number;
+    });
+
+    const lastVersion = await publicClient.readContract({
+      address: PROTOCOL_DATA_PROVIDER,
+      abi: factoryAbi,
+      functionName: "lastVersion",
+    });
 
     const result = [];
     for (let i = 0; i < totalEntities; i++) {
-      result.push(getDefaultCollateralInfo(publicClient, i));
+      const info = getDefaultCollateralInfo(publicClient, i, lastVersion);
+      if (info) result.push(info);
     }
     return await Promise.all(result);
   },

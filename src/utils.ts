@@ -5,13 +5,13 @@ import fs from "fs";
 export const arb1Client = createPublicClient({
   batch: { multicall: true },
   chain: arbitrum,
-  transport: http(),
+  transport: http("https://arbitrum.llamarpc.com/"),
 });
 
 export const mainnetClient = createPublicClient({
   batch: { multicall: true },
   chain: mainnet,
-  transport: http(),
+  transport: http("https://eth.llamarpc.com/"),
 });
 
 export function dumpOjectToFile(o: Object, fileName: string) {
