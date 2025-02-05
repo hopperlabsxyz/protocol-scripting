@@ -1,5 +1,27 @@
 from bs4 import BeautifulSoup
 import json
+from web3 import Web3
+
+# Function to compute the fullMarketId
+def compute_market_params_id(params):
+    # Convert each address to 32 bytes and numbers to a 32-byte hex string
+    loan_token = Web3.to_hex(Web3.to_bytes(hexstr=params['loanToken']).rjust(32, b'\0'))
+    collateral_token = Web3.to_hex(Web3.to_bytes(hexstr=params['collateralToken']).rjust(32, b'\0'))
+    oracle = Web3.to_hex(Web3.to_bytes(hexstr=params['oracle']).rjust(32, b'\0'))
+    irm = Web3.to_hex(Web3.to_bytes(hexstr=params['irm']).rjust(32, b'\0'))
+    lltv = Web3.to_hex(int(params['lltv']).to_bytes(32, 'big'))
+
+    # Concatenate all the parameters
+    concatenated_params = (
+        loan_token[2:] +  # Remove '0x' prefix
+        collateral_token[2:] +
+        oracle[2:] +
+        irm[2:] +
+        lltv[2:]
+    )
+
+    # Compute the Keccak256 hash
+    return Web3.keccak(hexstr=concatenated_params).hex()
 
 if __name__ == "__main__":
     html_file = "./markets_doc.html"
@@ -58,6 +80,22 @@ if __name__ == "__main__":
 
         # Only append the row if it contains at least one Etherscan address
         if has_etherscan_address:
+            required_fields = ['Loan Token', 'Collateral Token', 'Oracle', 'IRM', 'LLTV']
+            
+            # Skip rows that are missing any required field
+            if not all(field in row_data for field in required_fields):
+                continue
+            
+            # Compute the fullMarketId
+            market_params = {
+                'loanToken': row_data['Loan Token'],
+                'collateralToken': row_data['Collateral Token'],
+                'oracle': row_data['Oracle'],
+                'irm': row_data['IRM'],
+                'lltv': row_data['LLTV']
+            }
+            
+            row_data['fullMarketId'] = compute_market_params_id(market_params)
             results.append(row_data)
 
     # Save to JSON
