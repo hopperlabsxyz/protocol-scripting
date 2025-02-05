@@ -16,35 +16,33 @@ if __name__ == "__main__":
     if rows:
         first_row = rows.pop(0)
         columns = [th.text.strip() for th in first_row.select("th")]
-        print(f"Columns: {columns}")  # Debug: Print columns
 
     for row in rows:
         tds = row.select("td")
 
         # Skip rows without any <td> elements
         if not tds:
-            # print("Skipping row: No <td> elements found")  # Debug: Print skipped rows
             continue
         
         # Skip rows where the first <td> contains "zero address"
         if tds[0].text.strip().lower() == "zero address":
-            # print(f"Skipping row: Zero address found in {tds[0].text.strip()}")  # Debug: Print skipped rows
             continue
 
         # Process each row into a dictionary
         row_data = {}
+        has_etherscan_address = False  # Flag to track if the row has at least one Etherscan address
+
         for i in range(min(len(columns), len(tds))):  # Prevent index errors
             cell = tds[i].select_one("a")
 
             if cell and "href" in cell.attrs:
                 href_value = cell["href"]
-                # print(f"Found href: {href_value}")  # Debug: Print all hrefs
                 # Check if the href contains the Etherscan address URL
                 if "etherscan.io/address/" in href_value.lower():  # Case-insensitive check
                     # Extract the address from the href
                     address = href_value.rsplit("/", 1)[-1]
-                    print(f"Etherscan address found: {address}")  # Debug: Print Etherscan addresses
                     row_data[columns[i]] = address
+                    has_etherscan_address = True  # Mark that this row has an Etherscan address
                 else:
                     # If it's not an Etherscan address, skip this cell
                     continue
@@ -58,8 +56,8 @@ if __name__ == "__main__":
             except ValueError:
                 pass  # Ignore conversion if LLTV isn't a valid percentage
 
-        # Only append the row if it contains Etherscan addresses
-        # if any("etherscan.io/address/" in str(cell).lower() for cell in row_data.values()):
+        # Only append the row if it contains at least one Etherscan address
+        if has_etherscan_address:
             results.append(row_data)
 
     # Save to JSON
