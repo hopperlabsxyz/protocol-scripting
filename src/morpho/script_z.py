@@ -1,3 +1,5 @@
+# This script is to scrape the data (all vaults) from morpho doc
+#  This script is to be used to extract the data from the HTML file and convert it into a JSON file.
 from bs4 import BeautifulSoup
 import json
 from web3 import Web3
@@ -25,7 +27,7 @@ def compute_market_params_id(params):
 
 if __name__ == "__main__":
     html_file = "./markets_doc.html"
-    output_file = "./output/output0.json"
+    output_file = "./output/allVaultsDoc.json"
 
     with open(html_file, "r", encoding="utf-8") as f:
         data = f.read()
@@ -80,7 +82,7 @@ if __name__ == "__main__":
 
         # Only append the row if it contains at least one Etherscan address
         if has_etherscan_address:
-            required_fields = ['Loan Token', 'Collateral Token', 'Oracle', 'IRM', 'LLTV']
+            required_fields = ['loanToken', 'collateralToken', 'oracle', 'irm', 'lltv']
             
             # Skip rows that are missing any required field
             if not all(field in row_data for field in required_fields):
@@ -88,14 +90,14 @@ if __name__ == "__main__":
             
             # Compute the fullMarketId
             market_params = {
-                'loanToken': row_data['Loan Token'],
-                'collateralToken': row_data['Collateral Token'],
-                'oracle': row_data['Oracle'],
-                'irm': row_data['IRM'],
-                'lltv': row_data['LLTV']
+                'loanToken': row_data['loanToken'],
+                'collateralToken': row_data['collateralToken'],
+                'oracle': row_data['oracle'],
+                'irm': row_data['irm'],
+                'lltv': row_data['lltv']
             }
             
-            row_data['fullMarketId'] = compute_market_params_id(market_params)
+            row_data['marketId'] = compute_market_params_id(market_params)
             results.append(row_data)
 
     # Save to JSON
@@ -103,5 +105,3 @@ if __name__ == "__main__":
         json.dump(results, f, indent=4)
 
     print(f"Processed {len(results)} rows with Etherscan addresses.")
-
-    # //Now from 2 json file extracted (one file for only marketId and the other with all 6 others elements (loanToken, collaterallToken, marketId, lltv, oracle, irm"
