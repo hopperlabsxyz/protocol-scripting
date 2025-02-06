@@ -103,3 +103,5 @@ if __name__ == "__main__":
         json.dump(results, f, indent=4)
 
     print(f"Processed {len(results)} rows with Etherscan addresses.")
+
+    # //Now from 2 json file extracted (one file for only marketId and the other with all 6 others elements (loanToken, collaterallToken, marketId, lltv, oracle, irm"
