@@ -15,7 +15,7 @@ with open("./output/allVaultsDoc.json", "r", encoding="utf-8") as f:
 filtered_markets = [entry for entry in all_markets if entry["marketId"] in valid_market_ids]
 
 # Save the filtered data to a new JSON file
-with open("filtered_markets.json", "w", encoding="utf-8") as f:
+with open("./output/filtered_markets.json", "w", encoding="utf-8") as f:
     json.dump(filtered_markets, f, indent=4)
 
 print(f"Filtered {len(filtered_markets)} markets based on interface vaults.")
