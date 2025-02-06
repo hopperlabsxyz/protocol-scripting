@@ -1,0 +1,3584 @@
+<div
+  data-cy="borrow-table"
+  class="stack css-lodppm"
+  display="flex"
+  direction="column"
+  wrap="nowrap"
+>
+  <div class="stack css-ga3agj" display="flex" direction="row" wrap="wrap">
+    <h4 class="css-1oydgkg">Open a new position</h4>
+    <div class="stack css-1qu3df7" display="flex" direction="row" wrap="nowrap">
+      <button
+        type="button"
+        aria-haspopup="dialog"
+        aria-expanded="false"
+        aria-controls="radix-:r8q:"
+        data-state="closed"
+        class="css-tf9t9h"
+      >
+        <span class="css-10kcx5u">Edit properties</span>
+      </button>
+      <div class="css-1o8rrkn">
+        <div class="css-1exrmru">
+          <div size="20" class="icon css-6u1e6g" color="text.tertiary">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              icon="Search"
+              color="var(--colors-text-tertiary)"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 6.125C0 9.50774 2.74226 12.25 6.125 12.25C7.53917 12.25 8.8414 11.7707 9.87814 10.9658C9.91719 11.0484 9.97087 11.1258 10.0392 11.1941L12.6059 13.7608C12.9248 14.0797 13.4419 14.0797 13.7608 13.7608C14.0797 13.4419 14.0797 12.9248 13.7608 12.6059L11.1941 10.0392C11.1258 9.97087 11.0484 9.91718 10.9658 9.87813C11.7707 8.8414 12.25 7.53917 12.25 6.125C12.25 2.74226 9.50774 0 6.125 0C2.74226 0 0 2.74226 0 6.125ZM1.63333 6.125C1.63333 3.64432 3.64432 1.63333 6.125 1.63333C8.60568 1.63333 10.6167 3.64432 10.6167 6.125C10.6167 8.60568 8.60568 10.6167 6.125 10.6167C3.64432 10.6167 1.63333 8.60568 1.63333 6.125Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <input placeholder="Search markets..." class="css-1euab29" value="" />
+      </div>
+    </div>
+  </div>
+  <div class="stack css-ui0rs0" display="flex" direction="column" wrap="nowrap">
+    <div class="css-1i34yau" data-is-visible="false">
+      <table class="css-1hfpvu7">
+        <thead class="css-uu6h57">
+          <tr class="css-0">
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i">Collateral</span>
+                <div
+                  data-state="closed"
+                  class="stack css-10isoie"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <svg
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-is-sorted="false"
+                    class="css-19m08b7"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </th>
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i">Loan</span>
+                <div
+                  data-state="closed"
+                  class="stack css-10isoie"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <svg
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-is-sorted="false"
+                    class="css-19m08b7"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </th>
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i"
+                  >Liquidation LTV</span
+                >
+                <div
+                  data-state="closed"
+                  class="stack css-10isoie"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <svg
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-is-sorted="false"
+                    class="css-19m08b7"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </th>
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i"
+                  >Available Liquidity</span
+                >
+                <div
+                  data-state="closed"
+                  class="stack css-10isoie"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <svg
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-is-sorted="false"
+                    class="css-19m08b7"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </th>
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i"
+                  >1D Borrow APY</span
+                >
+                <div
+                  data-state="closed"
+                  class="stack css-10isoie"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <svg
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-is-sorted="false"
+                    class="css-19m08b7"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </th>
+            <th class="css-vuivyl" colspan="1">
+              <div
+                class="stack css-1w0abv1"
+                display="inline-flex"
+                direction="row"
+                wrap="nowrap"
+              >
+                <span data-state="closed" class="css-iicy1i"
+                  >Vault Listing</span
+                >
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="css-0">
+          <tr
+            data-cy="borrow-table-body-row-0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/link.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">LINK</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdc.svg" /></span
+                  ><span class="css-gfn2z8">USDC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><span class="css-gfn2z8">77%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">1.006.700,01 USDC</span>
+                  <div class="css-anlued">$1M</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">13,71%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9c765f69d8a8e40d2174824bc5107d05d7f0d0f81181048c9403262aeb1ab457&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 70px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/bprotocol.png" /></span
+                          ><span class="avatar css-4m9ctj"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/relend.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usde.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">USDe</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/dai.svg" /></span
+                  ><span class="css-gfn2z8">DAI</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><span class="css-gfn2z8">94,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">6.797,16 DAI</span>
+                  <div class="css-anlued">$6786,18</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">4,38%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xdb760246f6859780f6c1b272d47a8f64710777121118e56e0cdb4b8b744a3094&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/spark.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/rseth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">rsETH</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usda.svg" /></span
+                  ><span class="css-gfn2z8">USDA</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><span class="css-gfn2z8">77%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">39.570,93 USDA</span>
+                  <div class="css-anlued">$39,57k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">9,43%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 60px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/curve%20tricryptollama%20lp.svg" /></span
+                  ><span data-state="closed" class="css-4zqine"
+                    >Curve TricryptoLLAMA LP</span
+                  >
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/crvusd.svg" /></span
+                  ><span class="css-gfn2z8">crvUSD</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">107.748,00 crvUSD</span>
+                  <div class="css-anlued">$107,73k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">6,25%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0cd36e6ecd9d846cffd921d011d2507bc4c2c421929cec65205b3cd72925367c&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/assets/logos/crvusd.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wbib01.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">wbIB01</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/pyusd.svg" /></span
+                  ><span class="css-gfn2z8">PYUSD</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><span class="css-gfn2z8">96,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">0,01 PYUSD</span>
+                  <div class="css-anlued">$0,01</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">223,61%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xc576cddfd1ee8332d683417548801d6835fa15fb2332a647452248987a8eded3&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/steakhouse.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/curve%20tricryptousdc%20lp.svg" /></span
+                  ><span data-state="closed" class="css-4zqine"
+                    >Curve TricryptoUSDC LP</span
+                  >
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/crvusd.svg" /></span
+                  ><span class="css-gfn2z8">crvUSD</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">107.748,00 crvUSD</span>
+                  <div class="css-anlued">$107,73k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">8,52%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x74ef8d7022b0ef0c0e6dc001fbda3c8bd9a3e706f03bb559c833e1dce7302d3a&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/assets/logos/crvusd.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/pt-ageth-26jun2025.svg" /></span
+                  ><span data-state="closed" class="css-4zqine"
+                    >PT-agETH-26JUN2025</span
+                  >
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">0%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/weth.svg" /></span
+                  ><span class="css-gfn2z8">WETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><span class="css-gfn2z8">91,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">489,68 WETH</span>
+                  <div class="css-anlued">$1,38M</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">4,85%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1260f0313a8fdf0fc1792aa8fc2545c30227e553a23b087e5abe9bd91caf39a9&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 60px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/cbbtc.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">cbBTC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdt.svg" /></span
+                  ><span class="css-gfn2z8">USDT</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">72.963,78 USDT</span>
+                  <div class="css-anlued">$72,85k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">19,37%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x2b8019e6b9bd3a6cb615c5ff73c21bb514cdbc30d1f7a797c082e5975500ef4b&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/stusd.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">stUSD</span>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">6,44%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdt.svg" /></span
+                  ><span class="css-gfn2z8">USDT</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><span class="css-gfn2z8">94,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">72.963,78 USDT</span>
+                  <div class="css-anlued">$72,85k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">47,08%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xa44f90f459658de554346679e449b6166e76d03d9a97bc8573c7dec91c1dbf3a&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/ezeth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">ezETH</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/weth.svg" /></span
+                  ><span class="css-gfn2z8">WETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">6,69 WETH</span>
+                  <div class="css-anlued">$18,97k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">10,17%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x49bb2d114be9041a787432952927f6f144f05ad3e83196a7d062f374ee11d0ee&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 60px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/pumpbtc.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">pumpBTC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/cbbtc.svg" /></span
+                  ><span class="css-gfn2z8">cbBTC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><span class="css-gfn2z8">94,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">9,64 cbBTC</span>
+                  <div class="css-anlued">$947,85k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">29,44%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x351c12a2747b369ee31eb3b4f8814e34ce4909c8a361810c31d51f5ed2ab4239&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/curve%20tricryptousdt%20lp.svg" /></span
+                  ><span data-state="closed" class="css-4zqine"
+                    >Curve TricryptoUSDT LP</span
+                  >
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/crvusd.svg" /></span
+                  ><span class="css-gfn2z8">crvUSD</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">107.748,00 crvUSD</span>
+                  <div class="css-anlued">$107,73k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">11,61%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x1c4b9ce834604969d33dc277bd8473d8aee856e5a577c08427b6deeb97cc72d6&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/assets/logos/crvusd.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wsteth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">wstETH</span>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">3,05%</div>
+                  </div>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      WETH, ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wbtc.svg" /></span
+                  ><span class="css-gfn2z8">WBTC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><span class="css-gfn2z8">91,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">37,24 WBTC</span>
+                  <div class="css-anlued">$3,64M</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">0,22%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x82076a47f01513bb21a227c64f6c358c6748fe007155dac9f56d5524b2f1f512&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/sand.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">SAND</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdc.svg" /></span
+                  ><span class="css-gfn2z8">USDC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><span class="css-gfn2z8">62,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">6.433,13 USDC</span>
+                  <div class="css-anlued">$6432,36</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">0,02%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x19b2dc518e70f0b562a69d1a29edba38638970c9bc3c2f84a8a87548f6c6f53c&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/pufeth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">pufETH</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdc.svg" /></span
+                  ><span class="css-gfn2z8">USDC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><span class="css-gfn2z8">77%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">1.950.814,82 USDC</span>
+                  <div class="css-anlued">$1,95M</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">0,12%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x7e9c708876fa3816c46aeb08937b51aa0461c2af3865ecb306433db8a80b1d1b&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 82px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/bprotocol.png" /></span
+                          ><span class="avatar css-4m9ctj"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/relend.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/re7weth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">Re7WETH</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">2,37%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usda.svg" /></span
+                  ><span class="css-gfn2z8">USDA</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">6.617,96 USDA</span>
+                  <div class="css-anlued">$6617,81</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">-0,15%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x540266e1879fff261908dcd4f4c623ce99dcd4c9ae7004e9c97ed80bfcb9ea21&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/ezeth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">ezETH</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/weth.svg" /></span
+                  ><span class="css-gfn2z8">WETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><span class="css-gfn2z8">77%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">0,00 WETH</span>
+                  <div class="css-anlued">$0</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">12,28%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x093d5b432aace8bf6c4d67494f4ac2542a499571ff7a1bcc9f8778f3200d457d&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/sdai.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">sDAI</span>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">10,66%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdc.svg" /></span
+                  ><span class="css-gfn2z8">USDC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><span class="css-gfn2z8">94,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">32.575,44 USDC</span>
+                  <div class="css-anlued">$32,57k</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">3,78%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x3bb29b62affbedc60b8446b235aaa349d5e3bad96c09bca1d7a2d693c06669aa&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 58px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/block-analitica.png" /></span
+                          ><span class="avatar css-4m9ctj"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/bprotocol.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wbc3m.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">wbC3M</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/eure.svg" /></span
+                  ><span class="css-gfn2z8">EURe</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><span class="css-gfn2z8">98%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">1.164,71 EURe</span>
+                  <div class="css-anlued">$1210,52</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">0,02%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xab5423d55497b642df74011621b4c72a3c9b446e8800cf988644bcdbd747d58f&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/fence.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/pt-corn-ebtc-27mar2025.svg" /></span
+                  ><span data-state="closed" class="css-4zqine"
+                    >PT-corn-eBTC-27MAR2025</span
+                  >
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wbtc.svg" /></span
+                  ><span class="css-gfn2z8">WBTC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><span class="css-gfn2z8">91,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">0,01 WBTC</span>
+                  <div class="css-anlued">$979,01</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">-0,04%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x9dd533d05afa8dfce6a2ed82219e1c1dcebb16fe7722fb5912b989ef69df487f&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/mevcapital.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/amphreth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">amphrETH</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/weth.svg" /></span
+                  ><span class="css-gfn2z8">WETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">&lt; 0,01 WETH</span>
+                  <div class="css-anlued">$27,01</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><div
+                  class="stack css-bawu6g"
+                  display="inline-flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-qarkv1">92,86%</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x11db9f2c7bda8c2af6a6a72db18aa5eb9290cb99cf75a3c0abacf1b84b8eaf77&amp;network=mainnet"
+                ><span class="css-gfn2z8">-</span></a
+              >
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/solvbtc.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">SolvBTC</span>
+                  <div size="20" class="css-3p3zyy" data-state="closed">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      icon="RewardsStar"
+                      color="inherit"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.70786 1.63604C8.70786 1.24551 8.39128 0.928928 8.00076 0.928928C7.61023 0.928928 7.29365 1.24551 7.29365 1.63604V2.7472C7.29365 3.13773 7.61023 3.45431 8.00076 3.45431C8.39128 3.45431 8.70786 3.13773 8.70786 2.7472V1.63604ZM8.70786 13.2528C8.70786 12.8623 8.39128 12.5457 8.00076 12.5457C7.61023 12.5457 7.29365 12.8623 7.29365 13.2528V14.364C7.29365 14.7545 7.61023 15.0711 8.00076 15.0711C8.39128 15.0711 8.70786 14.7545 8.70786 14.364V13.2528ZM0.929688 8C0.929688 7.60947 1.24627 7.29289 1.63679 7.29289H2.74796C3.13849 7.29289 3.45507 7.60947 3.45507 8C3.45507 8.39052 3.13849 8.7071 2.74796 8.7071H1.63679C1.24627 8.7071 0.929688 8.39052 0.929688 8ZM13.2535 7.29289C12.863 7.29289 12.5464 7.60947 12.5464 8C12.5464 8.39052 12.863 8.7071 13.2535 8.7071H14.3647C14.7552 8.7071 15.0718 8.39052 15.0718 8C15.0718 7.60947 14.7552 7.29289 14.3647 7.29289H13.2535ZM4 3C3.72386 2.72386 3.27614 2.72386 3 3C2.72386 3.27614 2.72386 3.72386 3 4L3.78571 4.78571C4.06186 5.06186 4.50957 5.06186 4.78571 4.78571C5.06186 4.50957 5.06186 4.06186 4.78571 3.78571L4 3ZM12.2143 11.2143C11.9381 10.9381 11.4904 10.9381 11.2143 11.2143C10.9381 11.4904 10.9381 11.9381 11.2143 12.2143L12 13C12.2761 13.2761 12.7239 13.2761 13 13C13.2761 12.7239 13.2761 12.2761 13 12L12.2143 11.2143ZM3 13C2.72386 12.7239 2.72386 12.2761 3 12L3.78571 11.2143C4.06186 10.9381 4.50957 10.9381 4.78571 11.2143C5.06186 11.4904 5.06186 11.9381 4.78571 12.2143L4 13C3.72386 13.2761 3.27614 13.2761 3 13ZM11.2143 3.78571C10.9381 4.06186 10.9381 4.50957 11.2143 4.78571C11.4904 5.06186 11.9381 5.06186 12.2143 4.78571L13 4C13.2761 3.72386 13.2761 3.27614 13 3C12.7239 2.72386 12.2761 2.72386 12 3L11.2143 3.78571ZM8.55405 5.4866C8.55405 5.17816 8.30401 4.92811 7.99556 4.92811C7.68711 4.92811 7.43706 5.17816 7.43706 5.4866C7.43706 5.93327 7.2081 6.42669 6.81526 6.81954C6.42241 7.21238 5.92899 7.44134 5.48232 7.44134C5.17387 7.44134 4.92383 7.69139 4.92383 7.99984C4.92383 8.30829 5.17387 8.55833 5.48232 8.55833C5.92899 8.55833 6.42241 8.78729 6.81526 9.18014C7.2081 9.57299 7.43706 10.0664 7.43706 10.5131C7.43706 10.8215 7.68711 11.0716 7.99556 11.0716C8.30401 11.0716 8.55405 10.8215 8.55405 10.5131C8.55405 10.0664 8.78301 9.57299 9.17586 9.18014C9.56871 8.78729 10.0621 8.55833 10.5088 8.55833C10.8172 8.55833 11.0673 8.30829 11.0673 7.99984C11.0673 7.69139 10.8172 7.44134 10.5088 7.44134C10.0683 7.44134 9.57516 7.20642 9.17825 6.80466C8.78043 6.40198 8.55405 5.90729 8.55405 5.4866Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/usdc.svg" /></span
+                  ><span class="css-gfn2z8">USDC</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><span class="css-gfn2z8">86%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">457,34 USDC</span>
+                  <div class="css-anlued">$457,28</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">1,75%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x444327b909aa41043cc4f20209eefb2fbb37f1c38ff9ca312374a4ecc3f0a871&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/rseth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">rsETH</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/wsteth.svg" /></span
+                  ><span class="css-gfn2z8">wstETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      WETH, ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><span class="css-gfn2z8">94,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">0,09 wstETH</span>
+                  <div class="css-anlued">$337,13</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">-0,11%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 60px">
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/steakhouse.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-1cuvt78">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/sdai.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">sDAI</span>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">10,66%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/dai.svg" /></span
+                  ><span class="css-gfn2z8">DAI</span>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><span class="css-gfn2z8">98%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">74,94 DAI</span>
+                  <div class="css-anlued">$74,82</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">7,60%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0xb1eac1c0f3ad13fb45b01beac8458c055c903b1bff8cb882346635996a774f77&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/gauntlet.svg"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+          <tr
+            data-cy="borrow-table-body-row-0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb"
+            class="css-1lwoa5"
+          >
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><div
+                  class="stack css-17tt3d0"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/re7wsteth.svg" /></span
+                  ><span data-state="closed" class="css-4zqine">Re7wstETH</span>
+                  <div class="css-0">
+                    <div data-state="closed" class="css-1q10yin">0%</div>
+                  </div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="undefined avatar css-1er4wt6"
+                    ><img
+                      class="css-y56pmg"
+                      src="https://cdn.morpho.org/assets/logos/weth.svg" /></span
+                  ><span class="css-gfn2z8">WETH</span>
+                  <div data-state="closed" class="css-1q10yin">
+                    <div
+                      class="stack css-ioau97"
+                      display="flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      ETH
+                      <div
+                        size="9"
+                        class="icon css-a26ufd"
+                        color="icon.secondary"
+                      >
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          icon="Check"
+                          color="var(--colors-icon-secondary)"
+                        >
+                          <path
+                            d="M0.875 4.3125L3.375 6.8125L7.125 1.1875"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><span class="css-gfn2z8">91,5%</span></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <span class="css-bl3q1w">2.499,89 WETH</span>
+                  <div class="css-anlued">$7,08M</div>
+                </div></a
+              >
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><div
+                  class="stack css-ioau97"
+                  display="flex"
+                  direction="row"
+                  wrap="nowrap"
+                >
+                  <div class="css-0">
+                    <div
+                      data-state="closed"
+                      class="stack css-bawu6g"
+                      display="inline-flex"
+                      direction="row"
+                      wrap="nowrap"
+                    >
+                      <span class="css-qarkv1">1,62%</span>
+                      <div class="icon css-fdogam" color="icon.brand">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 15 14"
+                          fill="none"
+                          icon="Sparkles"
+                          color="var(--colors-icon-brand)"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M4.79.7a.7.7 0 1 0-1.4 0c0 .21-.112.478-.342.708-.23.23-.498.342-.708.342a.7.7 0 0 0 0 1.4c.21 0 .478.112.708.342.23.23.342.498.342.708a.7.7 0 0 0 1.4 0c0-.21.112-.478.342-.708.23-.23.498-.342.708-.342a.7.7 0 1 0 0-1.4c-.202 0-.47-.113-.705-.35C4.9 1.16 4.79.89 4.79.7Zm5.6 2.1a.7.7 0 0 1 .7.7c0 .527.284 1.147.783 1.652.497.504 1.115.798 1.667.798a.7.7 0 1 1 0 1.4c-.56 0-1.178.287-1.67.78-.493.492-.78 1.11-.78 1.67a.7.7 0 1 1-1.4 0c0-.56-.287-1.178-.78-1.67-.492-.493-1.11-.78-1.67-.78a.7.7 0 1 1 0-1.4c.56 0 1.178-.287 1.67-.78.493-.492.78-1.11.78-1.67a.7.7 0 0 1 .7-.7Zm-7 4.9a.7.7 0 0 1 .7.7c0 .359.196.804.564 1.176.366.37.81.574 1.186.574a.7.7 0 1 1 0 1.4c-.385 0-.828.2-1.19.56-.36.362-.56.805-.56 1.19a.7.7 0 1 1-1.4 0c0-.385-.2-.828-.56-1.19-.361-.36-.805-.56-1.19-.56a.7.7 0 1 1 0-1.4c.385 0 .829-.2 1.19-.56.36-.362.56-.805.56-1.19a.7.7 0 0 1 .7-.7Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+            <td class="css-zsprxi">
+              <a
+                class="css-woda04"
+                href="/market?id=0x20c488469064c8e2f892dab33e8c7a631260817f0db57f7425d4ef1d126efccb&amp;network=mainnet"
+                ><div class="css-1sg2lsz" style="width: 48px">
+                  <div class="css-qlvd7s">
+                    <div class="css-0">
+                      <div data-state="closed">
+                        <div class="css-1goe7rj">
+                          <span class="avatar css-1x9a9p9"
+                            ><img
+                              class="css-y56pmg"
+                              src="https://cdn.morpho.org/v2/assets/images/re7.png"
+                          /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="stack css-12g0i65" display="flex" direction="row" wrap="nowrap">
+      <button type="button" class="css-vgw7vj">
+        <div size="20" class="icon css-zneuvf" color="icon.secondary">
+          <svg
+            viewBox="0 0 12 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            icon="Arrow"
+            color="var(--colors-icon-secondary)"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </button>
+      <div
+        class="stack css-nvtvhw"
+        display="flex"
+        direction="row"
+        wrap="nowrap"
+        style="cursor: text"
+      >
+        <span class="css-1oi6i5r">Page</span
+        ><input class="css-3uk54a" value="5" /><span class="css-1oi6i5r"
+          >of 8</span
+        >
+      </div>
+      <button color="icon.secondary" type="button" class="css-vgw7vj">
+        <div size="20" class="icon css-1oddmex" color="icon.secondary">
+          <svg
+            viewBox="0 0 12 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            icon="Arrow"
+            color="var(--colors-icon-secondary)"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.8333 5.83325C11.8333 6.17843 11.5534 6.45825 11.2083 6.45825L2.34332 6.45825L5.80811 9.75773C6.05693 9.99698 6.06469 10.3926 5.82544 10.6414C5.58619 10.8903 5.19054 10.898 4.94173 10.6588L0.358394 6.28377C0.235845 6.16594 0.166587 6.00326 0.166587 5.83325C0.166587 5.66324 0.235845 5.50057 0.358394 5.38273L4.94173 1.00773C5.19054 0.768486 5.58619 0.776244 5.82544 1.02506C6.06469 1.27388 6.05693 1.66953 5.80811 1.90877L2.34332 5.20825L11.2083 5.20825C11.5534 5.20825 11.8333 5.48807 11.8333 5.83325Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
