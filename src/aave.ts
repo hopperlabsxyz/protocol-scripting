@@ -2,7 +2,7 @@ import { createPublicClient, getContract } from "viem";
 
 // PROTOCOL_DATA_PROVIDER
 const PROTOCOL_DATA_PROVIDER = "0x7F23D86Ee20D869112572136221e173428DD740B";
-import abi from "./abis/IPoolAddressesProvider";
+import abi from "./abis/IPoolAddressesProvider.ts";
 
 export default {
   getProtocolData: async (
