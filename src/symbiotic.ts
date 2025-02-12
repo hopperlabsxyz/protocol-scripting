@@ -2,13 +2,13 @@ import { createPublicClient, erc20Abi, getContract } from "viem";
 
 // PROTOCOL_DATA_PROVIDER
 const PROTOCOL_DATA_PROVIDER = "0x1BC8FCFbE6Aa17e4A7610F51B888f34583D202Ec";
-import factoryAbi from "./abis/DefaultCollateralFactory";
-import defaultCollateralAbi from "./abis/DefaultCollateral";
+import factoryAbi from "./abis/DefaultCollateralFactory.ts";
+import defaultCollateralAbi from "./abis/DefaultCollateral.ts";
 
 async function getDefaultCollateralInfo(
   publicClient: ReturnType<typeof createPublicClient>,
   index: number,
-  lastVersion: bigint
+  lastVersion: bigint,
 ) {
   const defaultCollateralAddr = (await publicClient.readContract({
     address: PROTOCOL_DATA_PROVIDER,
@@ -55,7 +55,7 @@ async function getDefaultCollateralInfo(
 
 export default {
   getProtocolData: async (
-    publicClient: ReturnType<typeof createPublicClient>
+    publicClient: ReturnType<typeof createPublicClient>,
   ) => {
     const totalEntities = await publicClient.readContract({
       address: PROTOCOL_DATA_PROVIDER,

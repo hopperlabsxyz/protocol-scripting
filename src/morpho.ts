@@ -1,4 +1,4 @@
-import { createPublicClient, getContract } from "viem";
+import { createPublicClient } from "viem";
 import { request, gql } from "graphql-request";
 
 const endpoint = "https://blue-api.morpho.org/graphql";
@@ -14,9 +14,6 @@ const query = gql`
         }
         name
         symbol
-        liquidity {
-          usd
-        }
       }
     }
   }
@@ -25,12 +22,14 @@ const query = gql`
 const variables = {
   orderBy: "TotalAssetsUsd",
   first: 30,
+  where: {
+    whitelisted: true,
+  },
 };
 
-async function fetchData() {
+async function fetchVaults() {
   try {
-    const data = await request(endpoint, query, variables);
-    console.log(JSON.stringify(data, null, 2));
+    return await request(endpoint, query, variables);
   } catch (error) {
     console.error("Error fetching data:", error);
   }
@@ -40,6 +39,7 @@ export default {
   getProtocolData: async (
     publicClient: ReturnType<typeof createPublicClient>,
   ) => {
-    return result;
+    const data = await fetchVaults();
+    return (data as any).vaults.items;
   },
 };
